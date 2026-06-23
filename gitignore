@@ -1,0 +1,18 @@
+# 1. Khởi tạo lại Git
+git init
+
+# 2. Tự động tạo file .gitignore chuẩn và ghi luật cấm vào đó
+echo "data/" > .gitignore
+echo "*.csv" >> .gitignore
+
+# 3. Gom các file code
+git add .
+
+# 4. Đóng gói code
+git commit -m "init project"
+
+# 5. Kết nối với GitHub
+git remote add origin https://github.com/NTT555/spam_detection_MNB.git
+
+# 6. Đẩy lên GitHub 
+git push -u origin master -f
